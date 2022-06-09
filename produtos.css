@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: #bbbbbb;
+    height: 300px;
+}
+
+
+
+.titulo-principal {
+    align-items: center;
+    display: flex;
+    margin: 0 15 0px 0 0;
+    text-transform: uppercase;
+}
+
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.produtos {
+    margin: 0 180px;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 16px;
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.produtos li:hover {
+    border-color: #c78c19
+}
+
+.produtos li:active {
+    border-color: #88c198;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descriçao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13 px;
+    margin: 20 px 0 0;
+}
+
+
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .produtos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+        margin: 0;
+    }
+}
